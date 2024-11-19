@@ -18,7 +18,7 @@ import { MailerModule } from '@nestjs-modules/mailer';
           user: process.env.EMAIL_SENDER_USER,
           pass: process.env.EMAIL_SENDER_PASS,
         },
-        service: 'gmail',
+        host: process.env.EMAIL_HOST,
       },
     }),
   ],
